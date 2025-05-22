@@ -14,6 +14,9 @@ A simple, clean, and responsive React + TypeScript CRUD application to manage a 
 - ✅ Global snackbar system for notifications
 - ✅ Reusable components and Atomic design structure
 - ✅ Unit tests with Jest + React Testing Library
+- ✅ Export all visible (filtered/searched) products to a downloadable .csv file
+- ✅ Only 3 products are shown per page for better readability, with pagination controls
+- ✅ Instantly search products by name or description
 
 ---
 
