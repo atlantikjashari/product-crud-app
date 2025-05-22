@@ -1,26 +1,32 @@
-# 🛍️ Product Manager App
+# Product Manager App
 
 A simple, clean, and responsive React + TypeScript CRUD application to manage a list of products. Built with Vite, Material UI (MUI), and localStorage for persistence.
 
----
 
-## 🚀 Features
+## How It Works
 
-- ✅ Add, update, delete products
-- ✅ Sort by price, filter by category
-- ✅ LocalStorage persistence (no backend)
-- ✅ Form validation with Formik + Yup
-- ✅ Responsive UI with MUI
-- ✅ Global snackbar system for notifications
-- ✅ Reusable components and Atomic design structure
-- ✅ Unit tests with Jest + React Testing Library
-- ✅ Export all visible (filtered/searched) products to a downloadable .csv file
-- ✅ Only 3 products are shown per page for better readability, with pagination controls
-- ✅ Instantly search products by name or description
+Watch this short demo to see the app in action:  
+[Click here to view the demo](https://calipio.com/app/play/LgDSXibc#bf94Tn8f)
 
 ---
 
-## 📦 Tech Stack
+## Features
+
+-  Add, update, delete products
+-  Sort by price, filter by category
+-  LocalStorage persistence (no backend)
+-  Form validation with Formik + Yup
+-  Responsive UI with MUI
+-  Global snackbar system for notifications
+-  Reusable components and Atomic design structure
+-  Unit tests with Jest + React Testing Library
+-  Export all visible (filtered/searched) products to a downloadable .csv file
+-  Only 3 products are shown per page for better readability, with pagination controls
+-  Instantly search products by name or description
+
+---
+
+##  Tech Stack
 
 - React 18
 - TypeScript
@@ -32,7 +38,7 @@ A simple, clean, and responsive React + TypeScript CRUD application to manage a 
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```
 src/
@@ -50,7 +56,7 @@ src/
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ### Run all tests:
 
@@ -60,9 +66,9 @@ npm run test
 
 ### Example test file:
 
-📁 `src/tests/components/ProductRow.test.tsx`
+ `src/tests/components/ProductRow.test.tsx`
 
-## ▶️ Start the app
+##  Start the app
 
 ```bash
 npm install
@@ -76,7 +82,7 @@ npm run preview
 
 ---
 
-## 📬 Author
+##  Author
 
 **Atlantik Jashari**  
 Product CRUD
