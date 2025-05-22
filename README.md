@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# 🛍️ Product Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, clean, and responsive React + TypeScript CRUD application to manage a list of products. Built with Vite, Material UI (MUI), and localStorage for persistence.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Add, update, delete products
+- ✅ Sort by price, filter by category
+- ✅ LocalStorage persistence (no backend)
+- ✅ Form validation with Formik + Yup
+- ✅ Responsive UI with MUI
+- ✅ Global snackbar system for notifications
+- ✅ Reusable components and Atomic design structure
+- ✅ Unit tests with Jest + React Testing Library
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Tech Stack
+
+- React 18
+- TypeScript
+- Vite
+- Material UI (MUI)
+- Formik + Yup
+- Jest + React Testing Library
+- Atomic Design File Structure
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+├── assets/styles          # Global CSS
+├── components             # Atomic design: atoms, molecules, organisms
+├── constants              # Static config (e.g. categories)
+├── contexts               # React contexts (SnackbarContext)
+├── hooks                  # Custom hooks
+├── pages                  # Page-level views (e.g. ProductsPage)
+├── providers              # Context Providers (e.g. SnackbarProvider)
+├── tests                  # Jest component tests
+├── types                  # TypeScript types
+├── utils                  # Helpers (e.g. formatPrice)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧪 Testing
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Run all tests:
+
+```bash
+npm run test
 ```
+
+### Example test file:
+
+📁 `src/tests/components/ProductRow.test.tsx`
+
+## ▶️ Start the app
+
+```bash
+npm install
+npm run dev
+```
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 📬 Author
+
+**Atlantik Jashari**  
+Product CRUD
