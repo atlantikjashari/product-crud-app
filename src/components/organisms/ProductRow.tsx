@@ -1,4 +1,4 @@
-import { TableRow, TableCell, IconButton, Chip } from "@mui/material";
+import { TableRow, TableCell, IconButton, Chip, Box } from "@mui/material";
 import { Edit, Delete } from "@mui/icons-material";
 import type { Product } from "../../types/product";
 
@@ -19,16 +19,34 @@ const ProductRow = ({ product, onEdit, onDelete }: Props) => {
           label={product.category}
           color={product.category === "Food" ? "primary" : "secondary"}
           size="small"
-          variant="outlined"
+          variant="filled"
+          sx={{
+            bgcolor: product.category === "Food" ? "#e0f7fa" : "#f3e5f5",
+            color: product.category === "Food" ? "#00796b" : "#6a1b9a",
+            fontWeight: 500,
+          }}
         />
       </TableCell>
       <TableCell align="right">
-        <IconButton onClick={() => onEdit(product)} aria-label="edit">
-          <Edit fontSize="small" />
-        </IconButton>
-        <IconButton onClick={() => onDelete(product.id)} aria-label="delete">
-          <Delete fontSize="small" />
-        </IconButton>
+        <Box display="flex" justifyContent="flex-end" gap={1}>
+          <IconButton
+            aria-label="edit"
+            onClick={() => onEdit(product)}
+            size="small"
+            sx={{ touchAction: "manipulation" }}
+          >
+            <Edit fontSize="small" color="primary" />
+          </IconButton>
+
+          <IconButton
+            aria-label="delete"
+            onClick={() => onDelete(product.id)}
+            size="small"
+            sx={{ touchAction: "manipulation" }}
+          >
+            <Delete fontSize="small" color="error" />
+          </IconButton>
+        </Box>
       </TableCell>
     </TableRow>
   );

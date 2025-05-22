@@ -1,11 +1,14 @@
 import { Box, FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 import { CATEGORY_OPTIONS } from "../../constants/categories";
+import { TextField } from "@mui/material";
 
 type Props = {
   categoryFilter: string | null;
   priceSort: "asc" | "desc" | null;
   onCategoryChange: (value: string | null) => void;
   onPriceSortChange: (value: "asc" | "desc" | null) => void;
+  searchQuery: string;
+  onSearchChange: (value: string) => void;
 };
 
 const FiltersBar = ({
@@ -13,6 +16,8 @@ const FiltersBar = ({
   priceSort,
   onCategoryChange,
   onPriceSortChange,
+  searchQuery,
+  onSearchChange,
 }: Props) => {
   return (
     <Box
@@ -61,6 +66,13 @@ const FiltersBar = ({
             <MenuItem value="desc">Highest to Lowest</MenuItem>
           </Select>
         </FormControl>
+        <TextField
+          label="Search"
+          size="small"
+          value={searchQuery}
+          onChange={(e) => onSearchChange(e.target.value)}
+          sx={{ minWidth: 160, flex: 1 }}
+        />
       </Box>
     </Box>
   );

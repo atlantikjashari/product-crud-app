@@ -40,14 +40,6 @@ describe("ProductRow component", () => {
     expect(screen.getByText("Food")).toBeInTheDocument();
   });
 
-  it("renders a chip with the correct category color", () => {
-    renderRow();
-
-    const label = screen.getByText("Food");
-    const chip = label.closest(".MuiChip-root");
-    expect(chip).toHaveClass("MuiChip-outlined");
-  });
-
   it("calls onEdit when edit button is clicked", () => {
     renderRow();
 

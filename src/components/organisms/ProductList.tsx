@@ -44,20 +44,51 @@ const ProductList = ({ products, onEdit, onDelete }: Props) => {
       >
         <Table stickyHeader>
           <TableHead>
-            <TableRow>
-              <TableCell>
+            <TableRow sx={{ backgroundColor: "#f5f6fa" }}>
+              <TableCell
+                sx={{
+                  fontWeight: 600,
+                  color: "#333",
+                  fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                }}
+              >
                 <strong>Name</strong>
               </TableCell>
-              <TableCell>
+              <TableCell
+                sx={{
+                  fontWeight: 600,
+                  color: "#333",
+                  fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                }}
+              >
                 <strong>Description</strong>
               </TableCell>
-              <TableCell>
+              <TableCell
+                sx={{
+                  fontWeight: 600,
+                  color: "#333",
+                  fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                }}
+              >
                 <strong>Price</strong>
               </TableCell>
-              <TableCell>
+              <TableCell
+                sx={{
+                  fontWeight: 600,
+                  color: "#333",
+                  fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                }}
+              >
                 <strong>Category</strong>
               </TableCell>
-              <TableCell align="right">
+              <TableCell
+                align="right"
+                sx={{
+                  fontWeight: 600,
+                  color: "#333",
+                  fontSize: { xs: "0.75rem", sm: "0.875rem" },
+                }}
+              >
                 <strong>Actions</strong>
               </TableCell>
             </TableRow>
